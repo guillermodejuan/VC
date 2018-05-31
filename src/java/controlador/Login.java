@@ -47,7 +47,7 @@ public class Login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection ("jdbc:mysql://localhost/sakila?useSSL=false", "root", "admin");
+            Connection conexion = DriverManager.getConnection ("jdbc:mysql://localhost/sakila?useSSL=false", "root", "ceste2018");
             
             String usuario = request.getParameter("usuario").toUpperCase();
             String pass = request.getParameter("password").toUpperCase();
