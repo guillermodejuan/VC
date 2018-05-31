@@ -40,8 +40,8 @@
             </thead>
             <tbody>
                 <c:forEach items="${peliculas}" var="pelicula">
-                    <tr>
-                        <td title="${pelicula.descripcion}" onclick="mostrarVentana('${pelicula.nombre}','${pelicula.descripcion}','${pelicula.lengua}','${pelicula.ano}')"><c:out value="${pelicula.nombre}" /></td>
+                    <tr style="cursor: pointer" onclick="mostrarVentana('${pelicula.nombre}','${pelicula.descripcion}','${pelicula.lengua}','${pelicula.ano}')">
+                        <td title="${pelicula.descripcion}" ><c:out value="${pelicula.nombre}" /></td>
                         <td><c:out value="${pelicula.ano}" /></td>
                         <td><c:out value="${pelicula.lengua}" /></td>
                         <td><c:out value="${pelicula.duracion}" /></td>
@@ -60,7 +60,7 @@
                 </tr>
             </tfoot>
         </table>
-        <div id="miVentana" style="position: fixed; width: 350px; height: 250px; top: 0; left: 0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; 
+        <div id="miVentana" style="position: fixed; width: 350px; height: 280px; top: 0; left: 0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; 
              font-weight: normal; border: #333333 3px solid; background-color: #FAFAFA; color: #000000; display:none;" >
             
         </div>
