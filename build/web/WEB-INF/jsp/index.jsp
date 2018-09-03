@@ -30,7 +30,7 @@
         <p align="center" style="color: red"><%=error%></p>
         <form method="post" action="Login">
             <table align="center">
-                <tr><td title="Email">Usuario:</td><td class="input"><input type="text" name="usuario"></td></tr>
+                <tr><td title="Email">Email:</td><td class="input"><input type="text" name="usuario"></td></tr>
                 <tr><td title="Password">Password:</td><td class="input"><input type="password" name="password"></td></tr>
                 <tr><td colspan="2" style="text-align:center"><button type="submit">Inicio</button></td></tr>
             </table>
